@@ -5,10 +5,10 @@ Personal project to create a location based monster hunting game.
 
 Includes: 
 
-Stateless architecture with Sockets by using Redis to pass information between server instances
-Authenication using jwt tokens that includes, lock out, change password, sms and email notifications using AWS
-Real time battle system architecture that supports a wide vareity of attacks and effects
-A JSON API for managing user data including inventory, monsters and purchases
+- Stateless architecture with Sockets by using Redis to pass information between server instances
+- Authenication using jwt tokens that includes, lock out, change password, sms and email notifications using AWS
+- Real time battle system architecture that supports a wide vareity of attacks and effects
+- A JSON API for managing user data including inventory, monsters and purchases
 
 Some features incomplete but technical goals realized, feel free to look through and use this for ideas.
 
