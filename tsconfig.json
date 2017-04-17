@@ -21,8 +21,6 @@
         "node_modules",
         "typings/browser",
         "typings/browser.d.ts",
-        "kai-alpha",
-        "kai-ticker"
     ],
     "compileOnSave": true,
     "buildOnSave": true,

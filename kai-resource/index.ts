@@ -78,13 +78,7 @@ app.use(function(req, res, next) {
   req.io = io;
   next();
 });
-// app.use(function promiseify(request, response, next) {
-//     response.promise = function(promise) {
-//         promise.catch(next);
-//     }
-//
-//     next();
-// });
+
 
 routes(app);
 
@@ -97,26 +91,7 @@ app.use(function(req, res, next) {
 
 // error handlers
 
-// development error handler
-// will print stacktrace
-// if (app.get('env') === 'development') {
-//   app.use(function(err, req, res, next) {
-//     console.log('found error')
-//     if (err instanceof ServerError) {
-//       res.sendStatus(err.code);
-//     }
-//     else if (err instanceof ValidationError) {
-//       res.sendStatus(422);
-//     }
-//
-//     else {
-//       res.sendStatus(500);
-//     }
-//   });
-// }
-
 // production error handler
-// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   console.log('found error')
   if (err instanceof ServerError) {
@@ -140,14 +115,6 @@ app.use(function(err, req, res, next) {
 });
 
 
-// // mongoose
-// if(process.env.NODE_ENV == 'development') {
-//   mongoose.connect('mongodb://localhost/kaiscripts');
-// }
-// else {
-//   mongoose.connect('mongodb://localhost/kaiscripts_' + process.env.NODE_ENV);
-// }
-
 function start() {
   server.listen(8000, function() {
     logger.info('Listening on port 8000.')
@@ -155,9 +122,6 @@ function start() {
 }
 
 if (process.env.NODE_ENV == 'test') {
-  // models.sequelize.sync({ force: true }).then(function() {
-  //   require('config/t-seed.js')(start);
-  // });
   start();
 }
 else {
