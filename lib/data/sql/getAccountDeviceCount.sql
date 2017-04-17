@@ -1,0 +1,1 @@
+select count(*) from "AccountDevices" as ac where ac."AccountId" = ${accountId};

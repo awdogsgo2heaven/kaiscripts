@@ -1,0 +1,1 @@
+select count(*)::integer from "AvatarKaiScripts" where "AvatarId" = ${avatarId} group by "AvatarId";

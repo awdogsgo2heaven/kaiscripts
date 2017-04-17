@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/6358a5c6e92d979947eb1252e8181b7b4a55eca8/email-templates/email-templates.d.ts",
+    "raw": "registry:dt/email-templates#0.0.0+20160613155046",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/6358a5c6e92d979947eb1252e8181b7b4a55eca8/email-templates/email-templates.d.ts"
+  }
+}

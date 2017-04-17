@@ -1,0 +1,1 @@
+delete from "AccountDevices" where "AccountId" = ${accountId};
